@@ -1,0 +1,343 @@
+/* ======================================= */
+/* HEADER & NAVIGATION STYLES */
+/* ======================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background: #faf9f8;
+    color: #1a1a1a;
+}
+
+body h1, body h2, body h3 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 9;
+}
+
+body p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+}
+
+/* ===== HEADER ===== */
+header {
+    padding: 20px 0;
+    background: #ffffff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+nav h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    letter-spacing: -0.5px;
+    transition: color 0.3s ease;
+}
+
+nav h1:hover {
+    color: #1a7a7a;
+}
+
+.menu ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+}
+
+.menu li a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 8px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #1a7a7a;
+    transition: width 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #1a7a7a;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
+
+.home-active a {
+    color: #1a7a7a !important;
+}
+
+.home-active {
+    border-bottom: 3px solid #1a7a7a;
+    padding-bottom: 5px;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 60px auto;
+    padding: 0 50px;
+    min-height: 70vh;
+}
+
+.hero img {
+    width: 50%;
+    max-width: 600px;
+    height: 650px;
+    border-radius: 20px;
+    /* box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1); */
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.main--div--yozuv {
+    flex: 1;
+    max-width: 600px;
+}
+
+.main--div--yozuv h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #e6f0fa;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.main--div--yozuv h1::before {
+    content: '🏛 ';
+    font-size: 2.8rem;
+}
+
+.main--div--yozuv p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ececec;
+    margin-bottom: 30px;
+}
+
+.button {
+    padding: 14px 45px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Barlow', sans-serif;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #1a7a7a;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(26, 122, 122, 0.3);
+    letter-spacing: 0.5px;
+}
+
+.button:hover {
+    background: #146565;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(26, 122, 122, 0.4);
+}
+
+.button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(26, 122, 122, 0.3);
+}
+
+
+/* ======================================================================== */
+
+.allMuses{
+    display: flex;
+    gap: 50px;
+}
+
+
+.romb-mus {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    border: 6px solid #ff6b6b;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    /* Yangi qo'shilgan qismlar */
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+/* Hover efekti - faqat transform orqali kattalashadi */
+.romb-mus:hover {
+    transform: scale(1.15); /* 15% kattalashadi */
+    box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
+}
+
+/* Container - boshqa elementlarni qimirlatmaslik uchun */
+.allMuses > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Har bir container o'z o'lchamini saqlab qoladi */
+    width: 312px; /* 300px + 6px border*2 */
+    height: 312px;
+    flex-shrink: 0; /* Siqilishni oldini oladi */
+}
+
+.allMuses {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ixtiyoriy: Yana ham silliqroq efekt uchun */
+.romb-mus {
+    transform-origin: center center; /* Markazdan kattalashadi */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+    padding: 60px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    max-width: 1400px;
+    width: 100%;
+}
+
+.h1-for-sec-1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.allMuses {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.allMuses > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 320px;
+    flex-shrink: 0;
+    transition: all 0.4s ease;
+}
+
+.romb-mus {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                box-shadow 0.5s ease,
+                border-color 0.5s ease,
+                filter 0.5s ease;
+    cursor: pointer;
+    will-change: transform;
+    backface-visibility: hidden;
+    position: relative;
+    z-index: 1;
+    filter: saturate(0.9) brightness(0.95);
+}
+
+.romb-mus:hover {
+    transform: scale(1.12) rotate(2deg);
+    box-shadow: 0 20px 60px rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.7);
+    filter: saturate(1.1) brightness(1.1);
+}
+
+/* Rasm ostidagi label - faqat matn */
+.allMuses > div::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+.allMuses > div:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Rasm nomlari */
+.allMuses > div:nth-child(1) { --name: "Louvre"; }
+.allMuses > div:nth-child(2) { --name: "British"; }
+.allMuses > div:nth-child(3) { --name: "Metropolitan"; }
+.allMuses > div:nth-child(4) { --name: "Ermitaj"; }
+
+.allMuses > div::after {
+    content: var(--name);
+}
