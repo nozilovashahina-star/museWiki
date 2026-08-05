@@ -1,0 +1,287 @@
+/* ================== RESET ================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background: #faf9f8;
+    color: #1a1a1a;
+}
+
+body h1, body h2, body h3 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 9;
+}
+
+body p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ================== HEADER ================== */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: 0 40px;
+    background: white;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+nav {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36px;
+    
+}
+
+nav h1 {
+
+    font-size: 42px;
+    color: #2d3b50;
+}
+
+.nav--ul {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    list-style: none;
+}
+
+.nav--ul a,
+.home-active {
+    text-decoration: none;
+    color: #2d3b50;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav--ul a:hover,
+.home-active {
+    color: #0d7c8c;
+    border-bottom: 2px solid #0d7c8c;
+    padding-bottom: 4px;
+}
+
+/* ================== HERO ================== */
+section:first-of-type {
+    position: relative;
+    margin-top: -20px;
+}
+
+section:first-of-type img {
+    width: 100%;
+    height: 760px;
+    object-fit: cover;
+    filter: brightness(0.78);
+}
+
+.header {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 170px;
+    letter-spacing: 10px;
+    color: rgba(230, 240, 255, 0.95);
+    text-shadow:
+        0 0 18px rgba(0,0,0,0.45),
+        0 10px 30px rgba(0,0,0,0.45);
+}
+/* ================== INFO CARDS ================== */
+.div-of-cards {
+    position: absolute;
+    left: 50%;
+    bottom: -85px;              /* hero va keyingi section orasidagi chegarada */
+    transform: translateX(-50%);
+    width: calc(100% - 80px);
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;       /* hammasi bir xil height */
+    gap: 22px;
+    z-index: 10;
+}
+
+.cards {
+    padding: 28px 22px;
+    border-radius: 24px;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 18px;
+    color: white;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.35),
+        inset 0 1px 0 rgba(255,255,255,0.15);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 180px;          /* bir xil height */
+}
+
+/* Turli width */
+.cards:nth-child(1) { width: 380px; }
+.cards:nth-child(2) { width: 260px; }
+.cards:nth-child(3) { width: 250px; }
+.cards:nth-child(4) { width: 240px; }
+
+/* Hero ostidagi bo'sh joy */
+section:last-of-type {
+    display: flex;
+    flex-direction: row;        /* matn chapda, rasm o'ngda */
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 180px 80px 120px;  /* kartalar uchun tepada joy */
+}
+
+/* ================== MONA LISA SECTION ================== */
+section:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+
+    padding: 180px 0 120px 80px;
+
+    /* umumiy top va bottom border */
+    border-top: 1px solid rgba(255,255,255,0.18);
+    border-bottom: 1px solid rgba(255,255,255,0.18);
+}
+
+.monlizaHaqida {
+    flex: 1;
+    max-width: 700px;
+    padding: 34px 34px 34px 0;
+
+    /* kartaning o'zi yo'q, faqat blur hissi qoladi */
+    background: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.monlizaHaqida h1 {
+    line-height: 1.2;
+    color: #fff7ef;
+    margin-bottom: 16px;
+}
+
+.monlizaHaqida p {
+    line-height: 1.75;
+}
+
+#monliza {
+    order: 2;
+    height: 500px;
+    width: auto;
+
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.monlizaHaqida{
+    color: white;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.25),
+        0 2px 8px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    
+    padding: 30px;
+}
+
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 1100px) {
+    .header h1 {
+        font-size: 120px;
+    }
+
+    section:last-of-type {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #monliza {
+        height: 420px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        margin: 0 16px;
+    }
+
+    nav {
+        padding: 0 20px;
+    }
+
+    .nav--ul {
+        gap: 18px;
+    }
+
+    .header h1 {
+        font-size: 72px;
+        letter-spacing: 4px;
+    }
+
+    .div-of-cards {
+        position: static;
+        transform: none;
+        width: auto;
+        padding: 28px 16px 60px;
+    }
+
+    section:first-of-type img {
+        height: 520px;
+    }
+
+    section:last-of-type {
+        padding: 80px 20px;
+    }
+
+    .monlizaHaqida h1 {
+        font-size: 38px;
+    }
+
+    .monlizaHaqida p {
+        font-size: 18px;
+    }
+
+    #monliza {
+        height: 320px;
+    }
+}
