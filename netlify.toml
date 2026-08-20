@@ -1,0 +1,9 @@
+# Netlify Deployment Configuration for MuseWiki
+[build]
+  publish = "web"
+
+# Fallback redirect for SPA / static routing
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 200

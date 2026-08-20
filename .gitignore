@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Deploy & Build outputs
+.netlify/
+.vercel/
+dist/
+build/
+
+# Operating System & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+*.tmp

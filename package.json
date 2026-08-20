@@ -1,0 +1,20 @@
+{
+  "name": "musewiki",
+  "version": "1.0.0",
+  "description": "MuseWiki - World Museums Information Platform",
+  "main": "web/index.html",
+  "scripts": {
+    "start": "npx serve web",
+    "dev": "npx serve web"
+  },
+  "keywords": [
+    "musewiki",
+    "museums",
+    "louvre",
+    "british",
+    "ermitaj",
+    "metropolitan"
+  ],
+  "author": "MuseWiki Team",
+  "license": "ISC"
+}
