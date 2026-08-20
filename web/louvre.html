@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Luvr Muzeyi (Louvre Museum) · MuseWiki</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./louvre.css">
+    <link rel="stylesheet" href="./shared.css">
     <link rel="stylesheet" href="./media.css">
 </head>
 <body>
@@ -23,24 +24,23 @@
         <header>
             <nav>
                 <div> 
-                    <h1>MuseWiki</h1>
+                    <a href="./index.html" style="text-decoration:none;"><h1>MuseWiki</h1></a>
                 </div>
 
                 <div class="menu">
                     <ul class="nav--ul">
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./about-us.html">About</a></li>
-                        <li  class="home-active">Louvre Museum</li>
+                        <li class="home-active">Louvre Museum</li>
                     </ul>   
                 </div>
             </nav>
         </header>
 
-<!-- ==================================================================================================== -->
-
+        <!-- ==================== HERO SECTION ==================== -->
         <section>
             <div>
-                <img width="100%" src="./img/luvr tr.png" alt="">
+                <img width="100%" src="./img/luvr tr.png" alt="Luvr Muzeyi Piramidasi">
             </div>
             
             <div class="header">
@@ -57,7 +57,7 @@
                 </p>
 
                 <p class="cards">
-                    A famous modern glass pyramid designed by I.M. Pei was added as the main entrance in 1989
+                    A famous modern glass pyramid designed by I.M. Pei was added as the main entrance in 1989.
                 </p>
 
                 <p class="cards">
@@ -66,29 +66,421 @@
             </div>
         </section>
         
-        <section>
+        <!-- ==================== SPOTLIGHT: MONA LISA ==================== -->
+        <section class="spotlight-wrapper">
 
-            <img id="monliza" src="./img/mona lisa transperent.png" alt="mona lisa was here">
 
             <div class="monlizaHaqida">
+                <span class="spotlight-badge">Eng Mashhur Durdona Asar</span>
                 <h1>
                     Mona Liza — Luvr muzeyining <br>
                     eng mashhur asari
                 </h1>
                 <br>
                 <p>
-                    Mona Liza (La Gioconda) — italiyalik buyuk rassom Leonardo da Vinchi tomonidan taxminan 1503–1519-yillar <br>
-                    orasida yaratilgan portret asaridir. Kartina hozirda Fransiyaning Parij shahridagi Luvr muzeyida saqlanadi <br>
-                    va dunyodagi eng mashhur san’at asarlaridan biri hisoblanadi. Asarda ayolning sirli tabassumi, tabiiy yuz <br>
-                    ifodasi va yumshoq rang o‘tishlari (sfumato usuli) tasvirlanganligi sababli u san’at tarixida alohida o‘rin <br>
-                    egallaydi. Har yili millionlab sayyohlar aynan shu kartinani ko‘rish uchun Luvr muzeyiga tashrif buyuradi <br>
-                    va u maxsus himoyalangan shisha ortida namoyish etiladi
+                    Mona Liza (La Gioconda) — italiyalik buyuk rassom Leonardo da Vinchi tomonidan taxminan 1503–1519-yillar 
+                    orasida yaratilgan portret asaridir. Kartina hozirda Fransiyaning Parij shahridagi Luvr muzeyida saqlanadi 
+                    va dunyodagi eng mashhur san’at asarlaridan biri hisoblanadi. Asarda ayolning sirli tabassumi, tabiiy yuz 
+                    ifodasi va yumshoq rang o‘tishlari (sfumato usuli) tasvirlanganligi sababli u san’at tarixida alohida o‘rin 
+                    egallaydi. Har yili millionlab sayyohlar aynan shu kartinani ko‘rish uchun Luvr muzeyiga tashrif buyuradi 
+                    va u maxsus himoyalangan shisha ortida namoyish etiladi.
                 </p>
+                <div class="spotlight-meta" style="margin-top:20px;">
+                    <div class="meta-item">
+                        <span class="meta-label">Rassom</span>
+                        <span class="meta-value">Leonardo da Vinchi</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Yaratilgan davri</span>
+                        <span class="meta-value">1503 – 1519 yillar</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Zal</span>
+                        <span class="meta-value">Salle des États (Denon)</span>
+                    </div>
+                </div>
             </div>
+
+            <img id="monliza" src="./img/mona lisa transperent.png" alt="Mona Liza kartinasi">
 
         </section>
 
+        <!-- ==================== MASTERPIECES GALLERY ==================== -->
+        <section class="gallery-section">
+            <div class="gallery-slider-header">
+                <div class="section-title-wrap">
+                    <h2 class="section-title">Luvrning Boshqa Buyuk Durdonalari</h2>
+                    <p class="section-subtitle">Dunyodagi eng nodir va qimmatbaho san'at xazinalari bilan tanishing</p>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-arrow-btn slider-prev" aria-label="Oldingisi"></button>
+                    <button class="slider-arrow-btn slider-next" aria-label="Keyingisi"></button>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Card 1: Venus de Milo -->
+                <div class="art-card" 
+                     data-title="Milosskaya Venera (Venus de Milo)"
+                     data-artist="Aleksandr Antioxiya (taxminan)"
+                     data-tag="Yunon Haykaltaroshligi"
+                     data-material="Paros marmari"
+                     data-location="Sully qanoti, 1-qavat, 345-xona"
+                     data-img="./img/venus-de-milo.png"
+                     data-desc="Miloddan avvalgi 100-yillarga oid qadimgi Yunonistonning ma'buda Afrodita haykali. 1820-yilda Milos orolida topilgan bo'lib, uning qo'llari yo'qligi va mukammal nisbatlari butun dunyo san'atshunoslarini hayratga solib keladi.">
+                    <div class="art-img-wrapper">
+                        <img src="./img/venus-de-milo.png" alt="Milosskaya Venera">
+                        <span class="art-tag">Mil. avv. 100</span>
+                    </div>
+                    <div class="art-info">
+                        <h3>Milosskaya Venera</h3>
+                        <span class="art-artist">Qadimgi Yunon Haykaltaroshligi</span>
+                        <p class="art-desc">Afrodita ma'budasining nafis marmar haykali, ellinistik davrning eng yuksak durdonasi.</p>
+                        <button class="art-btn">Batafsil ko'rish</button>
+                    </div>
+                </div>
+
+                <!-- Card 2: Winged Victory -->
+                <div class="art-card" 
+                     data-title="Samofrakiya Nikasi (Winged Victory of Samothrace)"
+                     data-artist="Ellinistik ustalar"
+                     data-tag="Ellinistik San'at"
+                     data-material="Paros va Lartos marmari"
+                     data-location="Denon qanoti, Daru zinasining yuqori qismi"
+                     data-img="./img/winged-victory.png"
+                     data-desc="G'alaba ma'budasi Nikaga bag'ishlangan ushbu monument haykal miloddan avvalgi II asrda Samofrakiya orolida dengiz g'alabasi sharafiga o'rnatilgan. Shamol va to'lqinlar ta'sirida hilpiragan libos dinamikasi haykaltaroshlikning cho'qqisi hisoblanadi.">
+                    <div class="art-img-wrapper">
+                        <img src="./img/image.png" alt="Samofrakiya Nikasi">
+                        <span class="art-tag">Mil. avv. 190</span>
+                    </div>
+                    <div class="art-info">
+                        <h3>Samofrakiya Nikasi</h3>
+                        <span class="art-artist">G'alaba Ma'budasi Nika</span>
+                        <p class="art-desc">Daru zinalari tepasida turgan, dengiz shamoli jozibador hilpiratgan qanotli marmar haykal.</p>
+                        <button class="art-btn">Batafsil ko'rish</button>
+                    </div>
+                </div>
+
+                <!-- Card 3: Napoleon Coronation -->
+                <div class="art-card" 
+                     data-title="Napoleonning Toj Kiyish Marosimi (The Coronation of Napoleon)"
+                     data-artist="Jacques-Louis David"
+                     data-tag="Neoklassitsizm"
+                     data-material="Moybo'yoq, kanvas (6x10 metr)"
+                     data-location="Denon qanoti, 702-zal"
+                     data-img="./img/napoleon-coronation.png"
+                     data-desc="1804-yil 2-dekabrda Parijdagi Notr-Dam soborida Napoleon Bonapartning imperatorlik tojini kiyish va Jozefinaga toj kiydirish marosimini aks ettiruvchi monumental shohasar.">
+                    <div class="art-img-wrapper">
+                        <img src="./img/napaleon.png" alt="Napoleonning Toj Kiyishi">
+                        <span class="art-tag">1807 yil</span>
+                    </div>
+                    <div class="art-info">
+                        <h3>Napoleonning Toj Kiyishi</h3>
+                        <span class="art-artist">Jacques-Louis David</span>
+                        <p class="art-desc">Fransiya imperiyasining eng ulug'vor tarixiy marosimini aks ettirgan 10 metrlik polotno.</p>
+                        <button class="art-btn">Batafsil ko'rish</button>
+                    </div>
+                </div>
+
+                <!-- Card 4: Liberty Leading the People -->
+                <div class="art-card" 
+                     data-title="Ozodlik barrikadalarda (Liberty Leading the People)"
+                     data-artist="Eugène Delacroix"
+                     data-tag="Fransuz Romantizmi"
+                     data-material="Moybo'yoq, kanvas"
+                     data-location="Denon qanoti, Mollien zali"
+                     data-img="./img/luvr main page.avif"
+                     data-desc="1830-yilgi Fransiya iyul inqilobiga bag'ishlangan epik kartina. Fransiya milliy ramziga aylangan ayol (Marianna) qo'lida uch rangli bayroq bilan xalqni ozodlik sari boshlab bormoqda.">
+                    <div class="art-img-wrapper">
+                        <img src="./img/liberty leading the people.png" alt="Ozodlik Barrikadalarda">
+                        <span class="art-tag">1830 yil</span>
+                    </div>
+                    <div class="art-info">
+                        <h3>Ozodlik Barrikadalarda</h3>
+                        <span class="art-artist">Eugène Delacroix</span>
+                        <p class="art-desc">Fransuz inqilobining xalqaro ramziga aylangan, erkinlik va matonat ifodasi bo'lgan kartina.</p>
+                        <button class="art-btn">Batafsil ko'rish</button>
+                    </div>
+                </div>
+
+                <!-- Card 5: Great Sphinx of Tanis -->
+                <div class="art-card" 
+                     data-title="Tanisning Katta Sfinksi (Great Sphinx of Tanis)"
+                     data-artist="Qadimgi Misr ustalari"
+                     data-tag="Qadimgi Misr"
+                     data-material="Pushti granit"
+                     data-location="Sully qanoti, Misr zallari"
+                     data-img="./img/statue for musewiki.png"
+                     data-desc="Misrdan tashqarida saqlanadigan eng yirik sfinkslardan biri. Miloddan avvalgi 26-asrga oid bo'lib, unga keyinchalik bir nechta fir'avnlarning nomlari o'yib yozilgan.">
+                    <div class="art-img-wrapper">
+                        <img src="./img/Great Sphinx of Tanis.png" alt="Tanis Sfinksi">
+                        <span class="art-tag">Mil. avv. 2600</span>
+                    </div>
+                    <div class="art-info">
+                        <h3>Tanisning Katta Sfinksi</h3>
+                        <span class="art-artist">Qadimgi Misr Xazinasi</span>
+                        <p class="art-desc">Granitdan ishlangan, Misrdan tashqaridagi eng salobatli va qadimiy sfinks haykali.</p>
+                        <button class="art-btn">Batafsil ko'rish</button>
+                    </div>
+                </div>
+
+                <!-- Card 6: Louvre Palace & Pyramid -->
+                <div class="art-card" 
+                     data-title="Imperatritsa Yevgeniya Toji"
+                     data-artist="Aleksandr-Gabriel Lemonnye"
+                     data-tag="Qirollik Xazinasi"
+                     data-material="Sof oltin, 1 354 ta olmos va 56 ta zumrad toshi"
+                     data-location="Luvr Muzeyi (Apollon galereyasi)"
+                     data-img="./img/crown.jpg"
+                     data-desc="1855-yilda Parijdagi Butunjahon koʻrgazmasi uchun maxsus tayyorlangan Fransiya imperatorligining nodir durdonasi.">
+                    <div class="art-img-wrapper">
+                        <img src="./img/crown.jpg" alt="Crown of Empress Eugénie">
+                        <span class="art-tag">Zargarlik San'ati</span>
+                    </div>
+                    <div class="art-info">
+                        <h3>Imperatritsa Yevgeniya Toji</h3>
+                        <span class="art-artist">Zargar: A.G. Lemonnye (1855)</span>
+                        <p class="art-desc">Fransiya imperatori Napoleon III ning rafiqasi uchun yasalgan, olmos va zumradlar bilan bezatilgan tarixiy qirollik toji.</p>
+                        <button class="art-btn">Batafsil ko'rish &rarr;</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================== WINGS OF LOUVRE ==================== -->
+        <section class="wings-section">
+            <div class="section-title-wrap">
+                <h2 class="section-title">Luvr Muzeyining 3 Asosiy Qanoti</h2>
+                <p class="section-subtitle">Muzey maydoni juda ulkan bo'lib, u 3 ta yirik qanotga (Wing) bo'lingan</p>
+            </div>
+
+            <div class="wings-nav">
+                <button class="wing-tab-btn active" data-target="denon">Denon Qanoti (Janubiy)</button>
+                <button class="wing-tab-btn" data-target="sully">Sully Qanoti (Sharqiy)</button>
+                <button class="wing-tab-btn" data-target="richelieu">Richelieu Qanoti (Shimoliy)</button>
+            </div>
+
+            <!-- Panel 1: Denon -->
+            <div id="denon" class="wing-panel active">
+                <div>
+                    <h3>Denon Qanoti (Aile Denon)</h3>
+                    <p>
+                        Luvrning eng gavjum va mashhur qanoti. Sena daryosi bo'yida joylashgan bo'lib, Mona Liza, 
+                        Samofrakiya Nikasi hamda Italiya va Ispaniya Uyg'onish davri durdonalari aynan shu yerda joylashgan.
+                    </p>
+                    <ul class="wing-highlights">
+                        <li>Mona Liza (Leonardo da Vinchi) — Salle des États</li>
+                        <li>Italiya Uyg'onish davri va Katta Galereya (Grande Galerie)</li>
+                        <li>Fransuz Romantizm maktabi asarlari (Delacroix, Géricault)</li>
+                        <li>Mikelanjeloning "O'layotgan Qul" haykali</li>
+                    </ul>
+                </div>
+                <div class="wing-card-stats">
+                    <div class="stat-box">
+                        <div class="stat-num">1-qavat</div>
+                        <div class="stat-label">Asosiy Ekspozitsiya</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-num">12,000+</div>
+                        <div class="stat-label">Namoyishdagi Asarlar</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 2: Sully -->
+            <div id="sully" class="wing-panel">
+                <div>
+                    <h3>Sully Qanoti (Aile Sully)</h3>
+                    <p>
+                        Luvrning eng qadimiy yuragi. Bu yerda o'rta asrlarga oid Filipp II qal'asi poydevori qoldiqlari, 
+                        qadimgi Misr, Qadimgi Yaqin Sharq va Yunon haykallari saqlanadi.
+                    </p>
+                    <ul class="wing-highlights">
+                        <li>Milosskaya Venera (Venus de Milo) haykali</li>
+                        <li>Qadimgi Misr bo'limi va Tanis Sfinksi</li>
+                        <li>O'rta asr Luvr qal'asi xandaqlari (Moat of Louvre)</li>
+                        <li>17–18-asr Fransuz dekorativ san'ati</li>
+                    </ul>
+                </div>
+                <div class="wing-card-stats">
+                    <div class="stat-box">
+                        <div class="stat-num">1190 y.</div>
+                        <div class="stat-label">Qal'a Poydevori</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-num">30+</div>
+                        <div class="stat-label">Tarixiy Zallar</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 3: Richelieu -->
+            <div id="richelieu" class="wing-panel">
+                <div>
+                    <h3>Richelieu Qanoti (Aile Richelieu)</h3>
+                    <p>
+                        Shimoliy qanot Rivoli ko'chasiga qaraydi. U yerda Flamand va Gollandiya rasmlari (Rembrandt, Vermeer), 
+                        Fransuz haykaltaroshlik hovlilari va Napoleon III ning dabdabali xonalari joylashgan.
+                    </p>
+                    <ul class="wing-highlights">
+                        <li>Napoleon III ning shohona kvartiralari (Apartments)</li>
+                        <li>Kurl Puget va Kurl Marly yopiq shisha hovlilari</li>
+                        <li>Yan Vermeerning "To'r to'quvchi qiz" kartinasi</li>
+                        <li>Mesopotamiya va Bobil san'ati (Hammurapi qonunlari)</li>
+                    </ul>
+                </div>
+                <div class="wing-card-stats">
+                    <div class="stat-box">
+                        <div class="stat-num">Napoleon III</div>
+                        <div class="stat-label">Shohona Xonalar</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-num">8,500+</div>
+                        <div class="stat-label">Haykaltaroshlik Asari</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== VISITOR GUIDE ==================== -->
+        <section class="visitor-section">
+            <div class="section-title-wrap">
+                <h2 class="section-title">Tashrif Buyuruvchilar Uchun Qo'llanma</h2>
+                <p class="section-subtitle">Luvr muzeyiga sayohatingizni qulay va unumli rejalashtiring</p>
+            </div>
+
+            <div class="visitor-grid">
+                <div class="visitor-card">
+                    <div class="v-icon">🕒</div>
+                    <h3>Ish Tartibi</h3>
+                    <p>
+                        Dushanba, Payshanba, Shanba, Yakshanba: <span class="highlight-text">09:00 – 18:00</span><br>
+                        Chorshanba va Juma: <span class="highlight-text">09:00 – 21:45</span> (Kechki ochilish)<br>
+                        <strong>Seshanba:</strong> Dam olish kuni (Yopiq).
+                    </p>
+                </div>
+
+                <div class="visitor-card">
+                    <div class="v-icon">🎫</div>
+                    <h3>Chipta Narxlari</h3>
+                    <p>
+                        Onlayn standart chipta: <span class="highlight-text">€22</span><br>
+                        18 yoshgacha bolalar uchun: <span class="highlight-text">Bepul</span><br>
+                        EI fuqarolari (18-25 yosh): <span class="highlight-text">Bepul</span><br>
+                        <em>Maslahat: Chiptalarni oldindan onlayn band qilish shart.</em>
+                    </p>
+                </div>
+
+                <div class="visitor-card">
+                    <div class="v-icon">📍</div>
+                    <h3>Manzil & Metro</h3>
+                    <p>
+                        Manzil: <span class="highlight-text">Rue de Rivoli, 75001 Paris, France</span><br>
+                        Metro bekati: <strong>Palais-Royal Musée du Louvre</strong> (1 va 7-liniyalar).<br>
+                        Asosiy kirish: Piramida orqali yoki Carrousel du Louvre.
+                    </p>
+                </div>
+
+                <div class="visitor-card">
+                    <div class="v-icon">💡</div>
+                    <h3>Foydali Maslahatlar</h3>
+                    <p>
+                        • Muzeyni to'liq ko'rish uchun kamida 3-4 soat ajrating.<br>
+                        • Rasmiy audio-gid ilovasini yuklab oling.<br>
+                        • Chorshanba va juma oqshomlarida odamlar soni kamroq bo'ladi.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== OTHER MUSEUMS ==================== -->
+        <section class="other-museums-section">
+            <div class="section-title-wrap">
+                <h2 class="section-title">Boshqa Dunyo Muzeylarini Kashf Qiling</h2>
+                <p class="section-subtitle">MuseWiki bo'ylab sayohatni davom ettiring</p>
+            </div>
+
+            <div class="other-museums-grid">
+                <a href="./british.html" class="other-mus-card">
+                    <img class="other-mus-thumb" src="./img/british romb.png" alt="British Museum">
+                    <div class="other-mus-body">
+                        <h4>Britaniya Muzeyi (London)</h4>
+                        <p>Buyuk Britaniya · 8 milliondan ortiq insoniyat tarixi eksponatlari</p>
+                    </div>
+                </a>
+
+                <a href="./metropolitan.html" class="other-mus-card">
+                    <img class="other-mus-thumb" src="./img/metropolitan romb.png" alt="Metropolitan Museum">
+                    <div class="other-mus-body">
+                        <h4>Metropoliten Muzeyi (Nyu-York)</h4>
+                        <p>AQSh · 5-Avenyudagi 5,000 yillik jahon san'ati durdonalari</p>
+                    </div>
+                </a>
+
+                <a href="./ermitaj.html" class="other-mus-card">
+                    <img class="other-mus-thumb" src="./img/ermitaj romb.png" alt="Ermitaj Muzeyi">
+                    <div class="other-mus-body">
+                        <h4>Davlat Ermitaji (Sankt-Peterburg)</h4>
+                        <p>Rossiya · Qishki Saroydagi shohona 3 millionlik xazina</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ==================== FOOTER ==================== -->
+        <footer class="muse-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>MuseWiki</h2>
+                    <p>
+                        Dunyo muzeylari, ularning durdona san'at asarlari, arxitekturasi va boy madaniy merosining ochiq ensiklopediyasi.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Dunyo Muzeylari</h4>
+                    <ul>
+                        <li><a href="./louvre.html">Luvr Muzeyi (Parij)</a></li>
+                        <li><a href="./british.html">Britaniya Muzeyi (London)</a></li>
+                        <li><a href="./metropolitan.html">Metropoliten Muzeyi (Nyu-York)</a></li>
+                        <li><a href="./ermitaj.html">Davlat Ermitaji (Sankt-Peterburg)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Tezkor Havolalar</h4>
+                    <ul>
+                        <li><a href="./index.html">Bosh sahifa</a></li>
+                        <li><a href="./about-us.html">Biz haqimizda</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 MuseWiki. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </footer>
+
     </div>
 
+    <!-- ==================== ART MODAL LIGHTBOX ==================== -->
+    <div id="artModal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-card">
+            <button class="modal-close" aria-label="Yopish"></button>
+            <div class="modal-body">
+                <img id="modalImg" src="" alt="Durdona Asar">
+                <div class="modal-info">
+                    <span id="modalBadge" class="modal-badge"></span>
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDesc"></p>
+                    <div class="modal-details-grid">
+                        <div><strong>Muallif / Davr:</strong> <span id="modalAuthor"></span></div>
+                        <div><strong>Material / Texnika:</strong> <span id="modalMaterial"></span></div>
+                        <div><strong>Zal / Joylashuvi:</strong> <span id="modalLocation"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
 </body>
 </html>

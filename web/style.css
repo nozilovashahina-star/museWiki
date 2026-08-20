@@ -373,3 +373,120 @@ section {
 .allMuses > div::after {
     content: var(--name);
 }
+
+/* ======================================= */
+/* HOME PAGE FOOTER STYLES                 */
+/* ======================================= */
+.home-footer {
+    width: 100%;
+    max-width: 1400px;
+    margin: 90px auto 0 auto;
+    padding: 40px 50px 25px 50px;
+    background: rgba(10, 8, 30, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 28px 28px 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: none;
+    box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.45);
+}
+
+.home-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    flex-wrap: wrap;
+}
+
+.home-footer-brand {
+    flex: 1;
+    min-width: 280px;
+    max-width: 440px;
+}
+
+.home-footer-brand h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.home-footer-brand p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.home-footer-suggestion {
+    flex: 1.4;
+    min-width: 320px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(226, 183, 101, 0.35);
+    border-radius: 22px;
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.suggestion-text h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.35rem;
+    color: #ffd88a;
+    margin-bottom: 6px;
+}
+
+.suggestion-text p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.88);
+    line-height: 1.6;
+}
+
+.home-social-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding-top: 4px;
+}
+
+.home-social-links span {
+    text-align: center;
+    display: flex;
+    gap: 10px;
+}
+
+.social-btn {
+    text-decoration: none;
+    padding: 9px 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 0.88rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-btn:hover {
+    background: #0d7c8c;
+    border-color: #0d7c8c;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(13, 124, 140, 0.45);
+}
+
+.home-footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+

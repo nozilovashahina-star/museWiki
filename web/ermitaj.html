@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davlat Ermitaji (State Hermitage Museum) · MuseWiki</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./ermitaj.css">
+    <link rel="stylesheet" href="./shared.css">
+    <link rel="stylesheet" href="./media.css">
+</head>
+<body>
+    
+    <div>
+
+        <!-- ==================== HEADER ==================== -->
+        <header>
+            <nav>
+                <div> 
+                    <a href="./index.html" style="text-decoration:none;"><h1>MuseWiki</h1></a>
+                </div>
+
+                <div class="menu">
+                    <ul class="nav--ul">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about-us.html">About</a></li>
+                        <li class="home-active">Hermitage Museum</li>
+                    </ul>   
+                </div>
+            </nav>
+        </header>
+
+        <!-- ==================== HERO SECTION ==================== -->
+        <section>
+            <div>
+                <img width="100%" src="./img/ermitaj sec.png" alt="Qishki Saroy Ermitaj Binosi">
+            </div>
+            
+            <div class="header">
+                <h1>HERMITAGE</h1>
+            </div>
+
+            <div class="div-of-cards">
+                <p class="cards">
+                    The State Hermitage Museum in Saint Petersburg, Russia, is the second-largest art museum in the world by gallery space.
+                </p>
+
+                <p class="cards">
+                    Founded in 1764 when Empress Catherine the Great acquired an impressive collection of paintings from Berlin.
+                </p>
+
+                <p class="cards">
+                    Comprises a complex of six historic buildings along Palace Embankment, including the Winter Palace of Russian tsars.
+                </p>
+
+                <p class="cards">
+                    Houses over 3 million items, including the largest collection of paintings in the world across 360+ grand halls.
+                </p>
+            </div>
+        </section>
+        
+        <!-- ==================== SPOTLIGHT: THE PEACOCK CLOCK ==================== -->
+        <section class="spotlight-section">
+
+            <div class="spotlight-text-box">
+                <span class="spotlight-badge">Eng Mashhur Mexanik Durdona</span>
+                <h1>
+                    Tovus Soati — 18-asr Mexanikasining Shohona Mo'jizasi
+                </h1>
+                <p class="spotlight-desc">
+                    Tovus soati (The Peacock Clock) — 1770-yillarda Londonda ingliz zargari va mexanigi Jeyms Koks tomonidan 
+                    yaratilgan hayratlanarli mexanik avtomat-soatdir. Ushbu oltin san'at asari Knyaz Grigoriy Potyomkin tomonidan 
+                    imperatrisa Yekaterina II ga shohona sovg'a sifatida taqdim etilgan. Zarhal zarb qilingan eman daraxti shoxida tovus, 
+                    boyqush, xo'roz va olmaxon joylashgan. Soat har soatda musiqiy jiringlash bilan harakatga kelib, tovus o'z dumi patlarini 
+                    yoyadi, boyqush qafasida aylanadi va xo'roz qichqiradi. Bu 18-asrdan to hozirgi kungacha benuqson ishlaydigan dunyodagi yagona soatdir.
+                </p>
+                <div class="spotlight-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Muallif</span>
+                        <span class="meta-value">James Cox (London)</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Material</span>
+                        <span class="meta-value">Zarhal bronza, oltin, billur</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Joylashuvi</span>
+                        <span class="meta-value">Pavilon Zali (Kichik Ermitaj)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spotlight-img-box">
+                <img id="peacock-img" src="./img/peacock-clock.png" alt="Tovus Soati (The Peacock Clock)">
+            </div>
+
+        </section>
+
+        <!-- ==================== MASTERPIECES GALLERY ==================== -->
+        <section class="gallery-section">
+            <div class="gallery-slider-header">
+                <div class="section-title-wrap">
+                    <h2 class="section-title">Davlat Ermitajining Mashhur Xazinalari</h2>
+                    <p class="section-subtitle">Italiya, Gollandiya, Ispaniya va Rossiya imperatorlik davri shohasarlari</p>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-arrow-btn slider-prev" aria-label="Oldingisi">&#10094;</button>
+                    <button class="slider-arrow-btn slider-next" aria-label="Keyingisi">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Card 1: Rembrandt Return of Prodigal Son -->
+                <div class="art-card" 
+                     data-title="Adashgan O'g'ilning Qaytishi (Return of the Prodigal Son)"
+                     data-artist="Rembrandt Harmenszoon van Rijn"
+                     data-tag="Golland Barokkosi"
+                     data-material="Moybo'yoq, kanvas"
+                     data-location="Yangi Ermitaj, 254-zal (Rembrandt zali)"
+                     data-img="./img/rembrandt-prodigal.png"
+                     data-desc="1668-yilda Rembrandt umrining so'nggi yillarida yaratgan, jahon tasviriy san'atining eng ta'sirli va chuqur psixologik durdonalaridan biri. Kechirim, ota mehri va insoniy pushaymonlik yuksak chiaroscuro nuri ostida tasvirlangan.">
+                    <div class="art-img-wrapper">
+                        <img src="./img/rebandend-son.png" alt="Adashgan O'g'ilning Qaytishi">
+                        <span class="art-tag">1668 yil</span>
+                    </div>
+                    <div class="art-info">
+                        <h3>Adashgan O'g'ilning Qaytishi</h3>
+                        <span class="art-artist">Rembrandt van Rijn</span>
+                        <p class="art-desc">Jahon san'ati tarixidagi eng emotsional va ulug'vor kechirim mavzusidagi shohasar.</p>
+                        <button class="art-btn">Batafsil ko'rish &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- Card 2: The Luncheon by Velazquez -->
+                <div class="art-card" 
+                     data-title="Uchtalik Nonushta (The Luncheon)"
+                     data-artist="Diego Velazquez"
+                     data-tag="Barokko San'ati"
+                     data-material="Moybo'yoq, tuval"
+                     data-location="Yangi Ermitaj, 239-zal (Ispaniya zali)"
+                     data-img="./img/the_luncheon.jpg"
+                     data-desc="1617-yilda ispan rangtasvirining eng buyuk namoyandasi Diego Velaskes tomonidan chizilgan shohasar. Unda turli yoshdagi uchta erkakning samimiy suhbati va nonushta stoli hayotiy va aniq tasvirlangan.">
+                    <div class="art-img-wrapper">
+                        <img src="./img/breakfast.png" alt="The Luncheon by Velazquez">
+                        <span class="art-tag">1617-yil</span>
+                    </div>
+                    <div class="art-info">
+                        <h3>Uchtalik Nonushta</h3>
+                        <span class="art-artist">Diego Velazquez (Ispaniya)</span>
+                        <p class="art-desc">Kundalik hayot lavhasini yorug'lik, soya va yuz ifodalari orqali aqlbovar qilmas darajada jonli aks ettirgan Ermitajning eng sevimli kartinalaridan biri.</p>
+                        <button class="art-btn">Batafsil ko'rish &rarr;</button>
+                    </div>
+                </div>
+
+
+                <!-- Card 3: Matisse La Danse -->
+                <div class="art-card" 
+                     data-title="Raqs (La Danse)"
+                     data-artist="Henri Matisse"
+                     data-tag="Fovizm va Modernizm"
+                     data-material="Moybo'yoq, monumental polotno"
+                     data-location="Bosh Shtab Binosi, 4-qavat (Sergey Shchukin zali)"
+                     data-img="./img/matisse-dance.png"
+                     data-desc="1910-yilda fransuz modernizm yetakchisi Anri Matiss tomonidan Sergey Shchukin buyurtmasi bilan yaratilgan jahon mashhur kartinasi. Moviy osmon va yashil tepalik fonida doira shaklida raqsga tushayotgan 5 nafar qizil figura hayotiy quvvat va ritmni ifodalaydi.">
+                    <div class="art-img-wrapper">
+                        <img src="./img/matisse-dance.png" alt="Anri Matiss Raqs">
+                        <span class="art-tag">1910 yil</span>
+                    </div>
+                    <div class="art-info">
+                        <h3>Raqs (La Danse)</h3>
+                        <span class="art-artist">Henri Matisse</span>
+                        <p class="art-desc">XX asr avangard va modernizm san'atining eng mashhur, jo'shqin polotnosi.</p>
+                        <button class="art-btn">Batafsil ko'rish &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- Card 4: Jordan Staircase -->
+                <div class="art-card" 
+                     data-title="Iordan Zinapoyasi (Posolskaya Zinasi)"
+                     data-artist="Francesco Bartolomeo Rastrelli"
+                     data-tag="Rossiya Barokkosi"
+                     data-material="Oq Carrara marmari, zarhal va shlyuka"
+                     data-location="Qishki Saroy Asosiy Kirishi"
+                     data-img="./img/ermitaj romb.png"
+                     data-desc="18-asrning o'rtalarida Franchesko Rastrelli loyihasi asosida barpo etilgan Qishki Saroyning shohona tantanali zinapoyasi. Xorijiy elchilar va imperator oilasi marosimlari shu yerdan boshlangan.">
+                    <div class="art-img-wrapper">
+                        <img src="./img/zinapoya.png" alt="Iordan Zinapoyasi">
+                        <span class="art-tag">1760-yillar</span>
+                    </div>
+                    <div class="art-info">
+                        <h3>Iordan Tantana Zinapoyasi</h3>
+                        <span class="art-artist">Francesco Rastrelli Me'morligi</span>
+                        <p class="art-desc">Oltin zarhallar, oyna va oq marmar ustunlar bilan bezatilgan shohona saroy durdonasi.</p>
+                        <button class="art-btn">Batafsil ko'rish &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- Card 5: Knights Hall & Scythian Gold -->
+                <div class="art-card" 
+                     data-title="Ritsarlar Zali va Qadimgi Skiflar Oltini"
+                     data-artist="O'rta Asr va Antik Ustalar"
+                     data-tag="Imperatorlik Qurol-Yarog'i"
+                     data-material="Po'lat, tilla, qimmatbaho toshlar"
+                     data-location="Yangi Ermitaj, Ritsarlar Zali"
+                     data-img="./img/statue for musewiki.png"
+                     data-desc="15–17-asrlarga oid 15,000 dan ortiq ritsar sovutlari, qilichlari hamda miloddan avvalgi VII-III asrlarga oid skif qo'rg'onlaridan topilgan qadimiy hayvon uslubidagi oltin marjonlar va kiyik haykalchalari.">
+                    <div class="art-img-wrapper">
+                        <img src="./img/knights.png" alt="Ritsarlar Zali">
+                        <span class="art-tag">Oltin Xazina</span>
+                    </div>
+                    <div class="art-info">
+                        <h3>Ritsarlar Zali va Skif Oltini</h3>
+                        <span class="art-artist">Antik va O'rta Asr Xazinasi</span>
+                        <p class="art-desc">Otliq ritsarlar to'liq harbiy anjomlari va ming yillik skif oltin durdonalari.</p>
+                        <button class="art-btn">Batafsil ko'rish &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- Card 6: Winter Palace & Neva Panorama -->
+                <div class="art-card" 
+                     data-title="Davlat Ermitaji Saroy Majmuasi"
+                     data-artist="Yekaterina II va Saroy Me'morlari"
+                     data-tag="Imperatorlik Merosi"
+                     data-material="Barokko va Neoklassik fasadlar"
+                     data-location="Sankt-Peterburg, Saray Maydoni"
+                     data-img="./img/peacock-clock.png"
+                     data-desc="Neva daryosi sohilidagi 6 ta ulug'vor tarixiy saroy majmuasi va 3 milliondan ziyod durdona san'at asarlarini o'z ichiga olgan jahonning eng boy xazinasi.">
+                    <div class="art-img-wrapper">
+                        <img src="./img/peacock-clock.png" alt="Ermitaj Majmuasi">
+                        <span class="art-tag">Saroy Majmuasi</span>
+                    </div>
+                    <div class="art-info">
+                        <h3>Ermitaj Saroy Majmuasi</h3>
+                        <span class="art-artist">3 Million San'at Xazinasi</span>
+                        <p class="art-desc">Rossiya imperatorlari qarorgohi bo'lgan 6 ta tarixiy saroy va qadimiy zallar.</p>
+                        <button class="art-btn">Batafsil ko'rish &rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== WINGS / DEPARTMENTS ==================== -->
+        <section class="wings-section">
+            <div class="section-title-wrap">
+                <h2 class="section-title">Ermitaj Muzey Majmualari</h2>
+                <p class="section-subtitle">Neva daryosi bo'yidagi 6 ta tarixiy saroy va zamonaviy Bosh shtab binosi</p>
+            </div>
+
+            <div class="wings-nav">
+                <button class="wing-tab-btn active" data-target="winter-palace">Qishki Saroy & Kichik Ermitaj</button>
+                <button class="wing-tab-btn" data-target="old-new">Katta va Yangi Ermitaj</button>
+                <button class="wing-tab-btn" data-target="general-staff">Bosh Shtab Binosi (Impressionizm)</button>
+            </div>
+
+            <!-- Panel 1: Winter Palace -->
+            <div id="winter-palace" class="wing-panel active">
+                <div>
+                    <h3>Qishki Saroy va Kichik Ermitaj</h3>
+                    <p>
+                        Rossiya imperatorlarining bosh qarorgohi bo'lgan ushbu barokko saroyida 1,000 dan ortiq xona mavjud. 
+                        Georgiy zali, Katta taxt zali, Malaxit zali va Pavilon zali (Tovus soati) aynan shu yerda joylashgan.
+                    </p>
+                    <ul class="wing-highlights">
+                        <li>Tovus Soati (Peacock Clock) va Pavilon zali</li>
+                        <li>Imperatorning Oltin va Malaxit mehmonxonalari</li>
+                        <li>1812-yilgi Harbiy Galereya (332 ta general portreti)</li>
+                        <li>Buyuk Pyotrning Kichik Taxt Zali</li>
+                    </ul>
+                </div>
+                <div class="wing-card-stats">
+                    <div class="stat-box">
+                        <div class="stat-num">1,000+</div>
+                        <div class="stat-label">Shohona Xonalar</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-num">1764 y.</div>
+                        <div class="stat-label">Tashkil Topgan</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 2: Old & New Hermitage -->
+            <div id="old-new" class="wing-panel">
+                <div>
+                    <h3>Katta va Yangi Ermitaj</h3>
+                    <p>
+                        Italiya, Ispaniya, Gollandiya va Flamandiyaning klassik tasviriy san'atiga bag'ishlangan. 
+                        Leonardo da Vinchi, Rafael, Titian, Karavadjo va Rubensning durdonalari saqlanadi.
+                    </p>
+                    <ul class="wing-highlights">
+                        <li>Rafael Lodjiyalari (Vatikanning aniq me'moriy nusxasi)</li>
+                        <li>Leonardo da Vinchining 2 ta original kartinasi (Madonna Benua, Madonna Litta)</li>
+                        <li>Titian, Giorgione va Venetsiya maktabi zallari</li>
+                        <li>Rim va Yunon antik haykallar zali</li>
+                    </ul>
+                </div>
+                <div class="wing-card-stats">
+                    <div class="stat-box">
+                        <div class="stat-num">360+</div>
+                        <div class="stat-label">Ekspozitsiya Zallari</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-num">20 km</div>
+                        <div class="stat-label">Zallar Uzunligi</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 3: General Staff -->
+            <div id="general-staff" class="wing-panel">
+                <div>
+                    <h3>Bosh Shtab Binosi (General Staff)</h3>
+                    <p>
+                        Saray maydonining qarshisidagi yarim doira bino bo'lib, unda 19–20-asr fransuz impressionistlari 
+                        (Monet, Renoir, Degas, Gauguin, Van Gogh, Matisse, Picasso) ning dunyodagi eng boy kolleksiyalaridan biri joylashgan.
+                    </p>
+                    <ul class="wing-highlights">
+                        <li>Anri Matissning "Raqs" (La Danse) va "Musiqa" asarlari</li>
+                        <li>Pablo Pikassoning "Moviy" va "Pushti" davrlari kartinalari</li>
+                        <li>Klod Monet va Pol Sezann durdonalari</li>
+                        <li>Faberje zargarlik xazinasi ko'rgazmasi</li>
+                    </ul>
+                </div>
+                <div class="wing-card-stats">
+                    <div class="stat-box">
+                        <div class="stat-num">800+</div>
+                        <div class="stat-label">Impressionist Asarlar</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-num">4-qavat</div>
+                        <div class="stat-label">Zamonaviy Qanot</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== VISITOR GUIDE ==================== -->
+        <section class="visitor-section">
+            <div class="section-title-wrap">
+                <h2 class="section-title">Tashrif Buyuruvchilar Uchun Qo'llanma</h2>
+                <p class="section-subtitle">Davlat Ermitajiga sayohat qilish bo'yicha zarur ma'lumotlar</p>
+            </div>
+
+            <div class="visitor-grid">
+                <div class="visitor-card">
+                    <div class="v-icon">🕒</div>
+                    <h3>Ish Tartibi</h3>
+                    <p>
+                        Seshanba, Payshanba, Yakshanba: <span class="highlight-text">11:00 – 18:00</span><br>
+                        Chorshanba, Juma, Shanba: <span class="highlight-text">11:00 – 20:00</span> (Kechki ochilish)<br>
+                        <strong>Dushanba:</strong> Yopiq (Dam olish kuni).
+                    </p>
+                </div>
+
+                <div class="visitor-card">
+                    <div class="v-icon">🎫</div>
+                    <h3>Chipta Narxlari</h3>
+                    <p>
+                        Asosiy muzey majmuasi chiptasi: <span class="highlight-text">500 RUB</span><br>
+                        Talabalar va o'quvchilar: <span class="highlight-text">Imtiyozli</span><br>
+                        <em>Har oyning uchinchi payshanbasi: Barcha uchun kirish BEPUL.</em>
+                    </p>
+                </div>
+
+                <div class="visitor-card">
+                    <div class="v-icon">📍</div>
+                    <h3>Manzil & Transport</h3>
+                    <p>
+                        Manzil: <span class="highlight-text">Saray maydoni, 2, Sankt-Peterburg</span><br>
+                        Metro bekatlari: <strong>Admiralteyskaya, Nevskiy Prospekt</strong>.<br>
+                        Neva daryosi bo'yidagi Saroy sohilida joylashgan.
+                    </p>
+                </div>
+
+                <div class="visitor-card">
+                    <div class="v-icon">💡</div>
+                    <h3>Foydali Maslahatlar</h3>
+                    <p>
+                        • Tovus soati chorshanba kunlari soat 19:00 da harakatga keltiriladi.<br>
+                        • Har bir eksponatga 1 daqiqa ajratilsa, barchasini ko'rishga 11 yil kerak bo'ladi.<br>
+                        • Chiptalarni rasmiy saytdan oldindan elektron olish tavsiya etiladi.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== OTHER MUSEUMS ==================== -->
+        <section class="other-museums-section">
+            <div class="section-title-wrap">
+                <h2 class="section-title">Boshqa Dunyo Muzeylarini Kashf Qiling</h2>
+                <p class="section-subtitle">MuseWiki bo'ylab sayohatni davom ettiring</p>
+            </div>
+
+            <div class="other-museums-grid">
+                <a href="./louvre.html" class="other-mus-card">
+                    <img class="other-mus-thumb" src="./img/luvr romb.png" alt="Louvre Museum">
+                    <div class="other-mus-body">
+                        <h4>Luvr Muzeyi (Parij)</h4>
+                        <p>Fransiya · Dunyoning eng yirik san'at saroyi va Mona Liza uyi</p>
+                    </div>
+                </a>
+
+                <a href="./british.html" class="other-mus-card">
+                    <img class="other-mus-thumb" src="./img/british romb.png" alt="British Museum">
+                    <div class="other-mus-body">
+                        <h4>Britaniya Muzeyi (London)</h4>
+                        <p>Buyuk Britaniya · 8 milliondan ortiq insoniyat tarixi eksponatlari</p>
+                    </div>
+                </a>
+
+                <a href="./metropolitan.html" class="other-mus-card">
+                    <img class="other-mus-thumb" src="./img/metropolitan romb.png" alt="Metropolitan Museum">
+                    <div class="other-mus-body">
+                        <h4>Metropoliten Muzeyi (Nyu-York)</h4>
+                        <p>AQSh · 5-Avenyudagi 5,000 yillik jahon san'ati durdonalari</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ==================== FOOTER ==================== -->
+        <footer class="muse-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>MuseWiki</h2>
+                    <p>
+                        Dunyo muzeylari, ularning durdona san'at asarlari, arxitekturasi va boy madaniy merosining ochiq ensiklopediyasi.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Dunyo Muzeylari</h4>
+                    <ul>
+                        <li><a href="./louvre.html">Luvr Muzeyi (Parij)</a></li>
+                        <li><a href="./british.html">Britaniya Muzeyi (London)</a></li>
+                        <li><a href="./metropolitan.html">Metropoliten Muzeyi (Nyu-York)</a></li>
+                        <li><a href="./ermitaj.html">Davlat Ermitaji (Sankt-Peterburg)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Tezkor Havolalar</h4>
+                    <ul>
+                        <li><a href="./index.html">Bosh sahifa</a></li>
+                        <li><a href="./about-us.html">Biz haqimizda</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 MuseWiki. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- ==================== ART MODAL LIGHTBOX ==================== -->
+    <div id="artModal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-card">
+            <button class="modal-close" aria-label="Yopish">&times;</button>
+            <div class="modal-body">
+                <img id="modalImg" src="" alt="Durdona Asar">
+                <div class="modal-info">
+                    <span id="modalBadge" class="modal-badge"></span>
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDesc"></p>
+                    <div class="modal-details-grid">
+                        <div><strong>Muallif / Davr:</strong> <span id="modalAuthor"></span></div>
+                        <div><strong>Material / Texnika:</strong> <span id="modalMaterial"></span></div>
+                        <div><strong>Zal / Joylashuvi:</strong> <span id="modalLocation"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
