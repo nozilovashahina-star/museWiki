@@ -53,19 +53,22 @@ function initArtModal() {
     const modalMaterial = document.getElementById('modalMaterial');
     const modalLocation = document.getElementById('modalLocation');
 
-    // Attach click events to all art cards with data attributes
-    const artCards = document.querySelectorAll('.art-card');
-    artCards.forEach(card => {
-        card.addEventListener('click', () => {
-            const title = card.getAttribute('data-title') || card.querySelector('h3')?.innerText;
-            const artist = card.getAttribute('data-artist') || card.querySelector('.art-artist')?.innerText;
-            const desc = card.getAttribute('data-desc') || card.querySelector('.art-desc')?.innerText;
-            const img = card.getAttribute('data-img') || card.querySelector('img')?.src;
-            const tag = card.getAttribute('data-tag') || card.querySelector('.art-tag')?.innerText || 'San\'at Asari';
+    // Attach click events to all art cards and elements with modal data
+    const clickableElements = document.querySelectorAll('.art-card, .clickable-art, [data-title]');
+    clickableElements.forEach(item => {
+        item.style.cursor = 'pointer';
+        item.addEventListener('click', (e) => {
+            // Prevent multiple triggers if target clicked
+            const card = e.currentTarget;
+            const title = card.getAttribute('data-title') || card.querySelector('h3, h1')?.innerText || 'Durdona Asar';
+            const artist = card.getAttribute('data-artist') || card.querySelector('.art-artist, .meta-value')?.innerText || 'Noma\'lum muallif';
+            const desc = card.getAttribute('data-desc') || card.querySelector('.art-desc, .spotlight-desc, p')?.innerText || '';
+            const img = card.getAttribute('data-img') || card.querySelector('img')?.src || (card.tagName === 'IMG' ? card.src : '');
+            const tag = card.getAttribute('data-tag') || card.querySelector('.art-tag, .spotlight-badge')?.innerText || 'San\'at Asari';
             const material = card.getAttribute('data-material') || 'Klassik san\'at merosi';
             const location = card.getAttribute('data-location') || 'Asosiy ekspozitsiya zali';
 
-            if (modalImg) modalImg.src = img;
+            if (modalImg && img) modalImg.src = img;
             if (modalBadge) modalBadge.innerText = tag;
             if (modalTitle) modalTitle.innerText = title;
             if (modalDesc) modalDesc.innerText = desc;

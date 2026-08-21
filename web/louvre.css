@@ -205,6 +205,12 @@ section:first-of-type img {
 
     border: none;
     border-radius: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+#monliza:hover {
+    transform: scale(1.04);
 }
 
 .monlizaHaqida{
